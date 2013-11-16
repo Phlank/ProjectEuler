@@ -1,6 +1,10 @@
 import time
 start_time = time.time()
 
+#returns 1 if goldbach's other conjecture holds for i
+def goldbach(i):
+	
+
 #main
 out = 0
 f = open("../txt/primes_under_one_million.txt", "r")
