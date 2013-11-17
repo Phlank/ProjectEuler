@@ -1,25 +1,10 @@
-#returns the list of the first thousand decimals of a/b
-#	-all trailing zeroes will be removed
-#	-all repetitions following the first will be removed
-def decimals(a, b):
-	list = []
-	t = a
-	for x in range(0,1000):
-		t = t%b
-		list.append(t)
-		t *= 10
-	while list[len(list)-1] == 0:
-		list.remove(len(list)-1)
-	pattern = []
-	for x in list:
-		if pattern.count(x) == 0:
-			pattern.append(x)
-		else:
-			for y in range(0, len(pattern)):
-				if x == 
-	return list
-	
+def recurring_cycle(n, d):
+    # solve 10^s % d == 10^(s+t) % d
+    # where t is length and s is start
+    for t in range(1, d):
+        if 1 == 10**t % d:
+            return t
+    return 0
 
-#main
-k = decimals(1,7)
-print k
+longest = max(recurring_cycle(1, i) for i in range(2,1001))
+print [i for i in range(2,1001) if recurring_cycle(1, i) == longest][0]
