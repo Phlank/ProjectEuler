@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(int argv, char* argc) {
+int main() {
 	int a, b, c, output;
 	static const int MAX = 4000000;
 	a = 1;

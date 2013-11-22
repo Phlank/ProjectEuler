@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(int argv, char* argc) {
+int main() {
 	int o = 0;
 	int i;
 	for (i = 3; i < 1000; i++) {
