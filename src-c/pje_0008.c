@@ -16,6 +16,7 @@ int main() {
 		if (highest < nums[0]*nums[1]*nums[2]*nums[3]*nums[4]) 
 			highest = nums[0]*nums[1]*nums[2]*nums[3]*nums[4];
 	}
+	fclose(f);
 	printf("%ld\n", highest);
 	return 0;
 }
