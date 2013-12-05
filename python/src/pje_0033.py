@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 #returns i as a list of digits
 def int_to_list(i):
         list = [int(x) for x in str(i).zfill(1000)]
@@ -43,7 +40,6 @@ def simplify_denom(a, b):
 		product *= x
 	return product
 
-#main
 a = 10
 out = 0
 numers = []
@@ -82,5 +78,4 @@ for x in denoms:
 	denominator *= x
 out = simplify_denom(numerator, denominator)
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

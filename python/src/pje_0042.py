@@ -1,7 +1,3 @@
-import time
-start_time = time.time()
-
-#main
 MIN = ord('A')-1
 f = open("../../txt/pje_0042_words.txt", "r")
 triangles = []
@@ -15,5 +11,4 @@ for line in f:
 	if triangles.count(line_sum) > 0: out += 1
 f.close()
 
-elapsed_time = time.time()-start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

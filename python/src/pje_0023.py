@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 def sum_divisors(n):
 	s = 0
 	for i in range(1, n):
@@ -11,7 +8,6 @@ def is_abundant(n):
 	if n < sum_divisors(n): return 1
 	else: return 0
 
-#main
 out = 0
 max = 28123
 nums = []
@@ -26,5 +22,4 @@ for i in range(0, len(abundant_nums)):
 			nums[k-1] = 0
 for i in nums: out += i
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

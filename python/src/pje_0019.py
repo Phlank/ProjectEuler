@@ -1,7 +1,3 @@
-import time
-start_time = time.time()
-
-#main
 out = 0
 day_of_week = 2									#sunday = 1
 day_of_month = 1
@@ -31,5 +27,4 @@ while day_of_month < 31 or month < 12 or year < 2000:				#the last day of the pe
 
 out -= 1
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

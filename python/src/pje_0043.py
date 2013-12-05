@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 import itertools
 
 #returns the digits of l as an integer
@@ -22,5 +19,4 @@ for x in pandigitals:
 	elif list_to_int(x[7:10])%first_primes[6] != 0: has_property = 0
 	if has_property == 1: out += list_to_int(x)
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

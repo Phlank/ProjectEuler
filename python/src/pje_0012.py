@@ -1,5 +1,3 @@
-import time
- 
 def num_divisors(n):
     if n % 2 == 0: n = n/2
     divisors = 1
@@ -31,4 +29,4 @@ index = find_triangular_index(500)
 triangle = (index * (index + 1)) / 2
 elapsed = (time.time() - start)
  
-print "%s found in %ss" % (triangle,elapsed)
+print "%s" % (triangle)

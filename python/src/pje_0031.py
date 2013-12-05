@@ -1,7 +1,3 @@
-import time
-start_time = time.time()
-
-#main
 out = 0
 for a in range(200, -1, -200):
 	for b in range(a, -1, -100):
@@ -12,5 +8,4 @@ for a in range(200, -1, -200):
 						for g in range(f, -1, -2):
 							out += 1
 
-elapsed_time = time.time()-start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

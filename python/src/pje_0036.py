@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 #returns a list of digits of i
 def int_to_list(i):
         list = [int(x) for x in str(i).zfill(1000)]
@@ -45,7 +42,6 @@ def to_binary(i):
 	i_binary = list_to_int(i_binary_list)
 	return i_binary
 
-#main
 out = 0
 n = 1
 while n < 1000000:
@@ -54,5 +50,4 @@ while n < 1000000:
 			out += n
 	n += 2
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 #returns a list of digits of i
 def int_to_list(i):
         list = [int(x) for x in str(i).zfill(1000)]
@@ -39,7 +36,6 @@ def primes_list_limit(i):
 		k += 2
 	return primes
 
-#main
 out = 0
 f = open("../../txt/primes_under_one_million.txt", "r")
 primes = []
@@ -59,5 +55,4 @@ for x in primes:
 		out += 1
 		print x
 
-elapsed_time = time.time()-start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d " % (out)

@@ -1,7 +1,3 @@
-import time
-
-start_time = time.time()
-
 n = 0
 done = 0
 
@@ -10,7 +6,5 @@ while done == 0:
 	
 	if n % 20 == 0 and n % 19 == 0 and n % 18 == 0 and n % 17 == 0 and n % 16 == 0 and n % 14 == 0 and n % 13 == 0 and n % 11 == 0:
 		done = 1
-		
-elapsed_time = time.time() - start_time
 
-print "%d found in %ss" % (n, elapsed_time)
+print "%d" % (n)

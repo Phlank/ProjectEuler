@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 out = 0
 
 #establishes the grid from the text file
@@ -53,5 +50,4 @@ while i < 17:
 		j = j + 1
 	i = i + 1
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

@@ -1,7 +1,4 @@
 import math
-import time
-
-start_time = time.time()
 
 primes = [2, 3]
 n = 5
@@ -20,6 +17,4 @@ while n < 2000000:
 for p in primes:
 	t = t + p
 	
-elapsed_time = time.time() - start_time
-
-print "%d found in %ss" % (t, elapsed_time)
+print "%d" % (t)

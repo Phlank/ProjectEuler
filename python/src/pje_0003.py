@@ -1,7 +1,3 @@
-import time
-
-start_time = time.time()
-
 n = 600851475143
 m = 2
 factors = []
@@ -17,7 +13,5 @@ while m <= n:
 		
 	else:
 		m = m + 1
-	
-elapsed_time = time.time() - start_time
 
-print "%d found in %ss" % (largest_factor, elapsed_time)
+print "%d" % (largest_factor)

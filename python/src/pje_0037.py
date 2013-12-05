@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 from collections import deque
 
 #returns i as a list of digits
@@ -27,7 +24,6 @@ def is_truncable(i):
 		backward_i.pop()
 	return truncable
 
-#main
 out = 0
 primes = []
 f = open("../../txt/primes_under_one_million.txt", "r")
@@ -44,5 +40,4 @@ while num < 11:
 		out += primes[k]
 	k += 1
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

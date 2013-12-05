@@ -1,8 +1,3 @@
-import fileinput
-import time
-
-start_time = time.time()
-
 maximum = 0
 f = open("../../txt/pje_0008_n.txt", "r")
 n = f.read()
@@ -15,6 +10,4 @@ while i < j:
 	if maximum < product: maximum = product
 	i = i + 1
 
-elapsed_time = time.time() - start_time
-
-print "%d found in %ss" % (maximum, elapsed_time)
+print "%d" % (maximum)

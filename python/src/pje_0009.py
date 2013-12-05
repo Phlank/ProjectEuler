@@ -1,7 +1,3 @@
-import time
-
-start_time = time.time()
-
 a, b, c = 1, 2, 3
 a_t, b_t, c_t = 1, 1, 1
 done = 0
@@ -22,6 +18,4 @@ while c < 1000 and done == 0:
 		b = b + 1
 	c = c + 1
 
-elapsed_time = time.time() - start_time
-
-print "%d found in %ss" % (product, elapsed_time)
+print "%d" % (product)

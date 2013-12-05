@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 import math
 
 #returns pascal's triangle of height h
@@ -18,8 +15,6 @@ def pascal(h):
 		current_level += 1
 	return triangle
 
-#main
 out = pascal(41)[40][20]
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

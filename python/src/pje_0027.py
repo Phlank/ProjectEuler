@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 #returns list of first k prime numbers
 def list_primes(k):
 	primes = [2, 3]
@@ -47,7 +44,6 @@ def list_primes_limit(k):
 def q_function(n, a, b):
 	return n**2+a*n+b
 
-#main
 out = 0
 primes = list_primes(1000)
 a = -1000
@@ -68,5 +64,4 @@ while a < 1000:
 		b += 1
 	a += 1
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

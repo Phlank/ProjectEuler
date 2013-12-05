@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 #returns an integer as a list of digits
 def int_to_list(i):
         list = [int(x) for x in str(i).zfill(1000)]
@@ -37,7 +34,6 @@ def digit_factorial_sum(i):
 		sum += small_factorial(x)
 	return sum
 
-#main
 out = 0
 n = 3
 max = small_factorial(9)
@@ -46,5 +42,4 @@ while n < max:
 		out += n
 	n += 1
 
-elapsed_time = time.time()-start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

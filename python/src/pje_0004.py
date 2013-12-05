@@ -1,7 +1,3 @@
-import time
-
-start_time = time.time()
-
 #returns 0 if false, 1 if true
 def is_palindrome(n):
 	if len(n) < 2:
@@ -32,7 +28,4 @@ while a < 1000:
 		b = b + 1
 	a = a + 1
 
-elapsed_time = time.time() - start_time
-
-print "%d found in %ss" % (largest_palindrome, elapsed_time)
-			
+print "%d" % (largest_palindrome)

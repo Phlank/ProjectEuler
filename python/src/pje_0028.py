@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 #generates a spiral of numbers of nxn, e.g.
 #7 8 9
 #6 1 2
@@ -54,7 +51,6 @@ def number_spiral(n):
 		else: last = "up"
 	return spiral
 
-#main
 n = 1001
 spiral = number_spiral(n)
 x, y = 0, 0
@@ -65,5 +61,4 @@ for x in range (0, n):
 	out += spiral[x][y]
 out -= 1
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

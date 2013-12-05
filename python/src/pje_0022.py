@@ -1,7 +1,3 @@
-import time
-start_time = time.time()
-
-#main
 out = 0
 names = []
 f = file("../../txt/pje_0022_names.txt", "r")
@@ -18,5 +14,4 @@ for name in names:
 	value *= i
 	out += value
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

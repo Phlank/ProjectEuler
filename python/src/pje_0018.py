@@ -1,7 +1,3 @@
-import time
-start_time = time.time()
-
-#main
 out = 0
 rows = []
 f = open("../../txt/pje_0018_pyramid.txt", "r")
@@ -20,5 +16,4 @@ while row > 0:
 		col += 1
 out = rows[0][0]
 
-elapsed_time = time.time() - start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

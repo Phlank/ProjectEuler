@@ -1,6 +1,3 @@
-import time
-start_time = time.time()
-
 #returns the ith triangle number
 def triangle(i):
 	return i*(i+1)/2
@@ -31,5 +28,4 @@ while found == 0:
 			found = 1
 			out = triangles[k]
 
-elapsed_time = time.time()-start_time
-print "%d found in %ss" % (out, elapsed_time)
+print "%d" % (out)

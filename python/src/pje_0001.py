@@ -1,7 +1,3 @@
-import time
-
-start_time = time.time()
-
 n = 0		#num to test
 sum = 0		#sum of successful tests
 
@@ -15,6 +11,4 @@ while n < 1000:
 	#n increments
 	n = n + 1
 
-elapsed_time = time.time() - start_time
-
-print "%d found in %ss" % (sum, elapsed_time)
+print "%d" % (sum)
